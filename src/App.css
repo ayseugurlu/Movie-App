@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("https://images.unsplash.com/photo-1518146172696-7a1975ca03e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"), linear-gradient(to right, rgba(108, 105, 105, 0.945),rgba(82, 78, 78, 0.8));
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+
