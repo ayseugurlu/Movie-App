@@ -14,8 +14,6 @@ const BASE_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}
 
 const MovieProvider = ({children}) => {
 
-  console.log("calisiyor mu");
-
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);

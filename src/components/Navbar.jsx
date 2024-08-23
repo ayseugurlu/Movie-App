@@ -36,7 +36,7 @@ const Navbar = () => {
             alt=""
           />
           {profilopen ? ( <div className="flex flex-col text-xl  text-slate-600 bg-fuchsia-300 p-4 mt-1 rounded-lg">
-            <NavLink to="/signin" className="hover:text-slate-300">Sign In</NavLink>
+            <NavLink to="/signup" className="hover:text-slate-300">Sign Up</NavLink>
             <NavLink to="/login" className="hover:text-slate-300">Login</NavLink>
             <NavLink to="/logout" className="hover:text-slate-300">Logout</NavLink>
           </div>) : ""}

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext} from "react";
 import { MovieContext } from "../context/MovieProvider";
 
 const API_KEY = process.env.REACT_APP_TMDB_KEY;

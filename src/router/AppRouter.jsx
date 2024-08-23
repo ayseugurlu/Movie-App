@@ -4,17 +4,19 @@ import Navbar from '../components/Navbar'
 import Main from '../pages/Main'
 import Footer from '../components/Footer'
 import Movies from '../pages/Movies'
+import Register from '../pages/Register'
 
 const AppRouter = () => {
-  console.log("calisiyor mu")
+ 
  
   return (
     <>
-    { console.log("calisiyor mu")}
+    
     <Navbar/>
     <Routes>
         <Route path="/" element={<Main/>} />
         <Route path="/movies" element={<Movies/>} />
+        <Route path='/signup' element={<Register/>}/>
 
     </Routes>
 
