@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import Movies from '../pages/Movies'
 import Register from '../pages/Register'
 import MovieDetail from '../pages/MovieDetail'
+import Login from '../pages/Login'
 
 const AppRouter = () => {
  
@@ -17,7 +18,8 @@ const AppRouter = () => {
     <Routes>
         <Route path="/" element={<Main/>} />
         <Route path="/movies" element={<Movies/>} />
-        <Route path='/signup' element={<Register/>}/>
+        <Route path="/signup" element={<Register/>}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path="/details/:id" element={<MovieDetail/>}/>
 
     </Routes>

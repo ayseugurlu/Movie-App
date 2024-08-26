@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import AuthContext from "./context/AuthContext";
 import MovieProvider from "./context/MovieProvider";
@@ -10,6 +11,7 @@ function App() {
       <AuthContext>
         <MovieProvider>
           <AppRouter />
+          <ToastContainer/>
         </MovieProvider>
       </AuthContext>
         
