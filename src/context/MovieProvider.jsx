@@ -5,11 +5,8 @@ import axios from "axios";
 //!context area
 export const MovieContext = createContext();
 
-const API_KEY = process.env.REACT_APP_TMDB_KEY;
+const API_KEY=process.env.REACT_APP_TMDB_KEY;
 const BASE_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}`;
-
-
-
 
 
 const MovieProvider = ({children}) => {
@@ -21,15 +18,15 @@ const MovieProvider = ({children}) => {
   const [movies, setMovies] = useState([]);
 
 
-  const getMovies = async () => {
+  const getMovies = async (API_ADDRESS) => {
     setLoading(true);
 
     try {
-      const { data } = await axios.get(BASE_URL);
+      const { data } = await axios.get(API_ADDRESS);
 
       setMovies(data.results);
 
-      console.log(data.results);
+      // console.log(data.results);
 
     } catch (error) {
 
@@ -41,11 +38,12 @@ const MovieProvider = ({children}) => {
   };
 
   useEffect(() => {
-    getMovies();
+    getMovies(BASE_URL);
   }, []);
 
+  
   return (
-    <MovieContext.Provider value={{ movies, loading,error}}>
+    <MovieContext.Provider value={{ movies, loading,error, getMovies}}>
       {children}
     </MovieContext.Provider>
   );

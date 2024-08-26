@@ -5,6 +5,7 @@ import Main from '../pages/Main'
 import Footer from '../components/Footer'
 import Movies from '../pages/Movies'
 import Register from '../pages/Register'
+import MovieDetail from '../pages/MovieDetail'
 
 const AppRouter = () => {
  
@@ -17,6 +18,7 @@ const AppRouter = () => {
         <Route path="/" element={<Main/>} />
         <Route path="/movies" element={<Movies/>} />
         <Route path='/signup' element={<Register/>}/>
+        <Route path="/details/:id" element={<MovieDetail/>}/>
 
     </Routes>
 

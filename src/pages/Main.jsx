@@ -7,13 +7,13 @@ const Main = () => {
   const navigate =useNavigate()
 
   return (
-    <div className='text-white font-mono flex-col mt-96  h-full p-8'>
-        <p className='text-3xl w-[800px]'>Discover the latest movies, explore genres, and enjoy cinematic adventures.</p>
+    <div className='text-white font-mono flex flex-col gap-10 md:gap-72  mt-72 sm:mt-96 p-8 h-16'>
+        <p className='text-3xl w-[500px] md:w-[800px]'>Discover the latest movies, explore genres, and enjoy cinematic adventures.</p>
 
-        <p className='flex gap-3 text-black hover:text-white text-lg border-[1px] border-white-200 w-[250px] h-14 p-3 rounded-2xl bg-white hover:bg-black my-16 ml-[1200px]'>
+        <button className='flex gap-3 text-black hover:text-white text-sm md:text-lg border-[1px] border-white-200 p-3 items-center  rounded-2xl bg-white hover:bg-black self-start md:self-end'>
         <IoIosArrowRoundForward className='text-4xl bg-fuchsia-400 rounded-2xl hover:bg-fuchsia-600'
         onClick={()=>navigate("/login")}
-         />Get Started</p>
+         /> <span>Get Started</span> </button>
     </div>
   )
 }

@@ -2,9 +2,11 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='flex justify-between items-center text-white mx-5 font-mono'>
+    <div className='relative'>
+    <div className='flex justify-between items-center text-white px-2 font-mono bg-[#030303] fixed bottom-0 w-full'>
       <p>Copyright 2024</p>
       <p>Ayse Ugurlu</p>
+    </div>
     </div>
   )
 }

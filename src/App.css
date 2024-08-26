@@ -6,13 +6,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body{
     background: url("https://images.unsplash.com/photo-1518146172696-7a1975ca03e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"), linear-gradient(to right, rgba(108, 105, 105, 0.945),rgba(82, 78, 78, 0.8));
     background-repeat: no-repeat;
     object-fit: cover;
-    background-size: cover;
+     background-size: cover;  
+     background-attachment: fixed;
+    
+    
+    
     
 }
 
+
+
+
+
+
+
+@layer base{
+    
+    input{
+        @apply bg-transparent outline-none text-slate-800 text-[1em] tracking-wide indent-6 mb-2
+    }
+
+
+}
+
+
+@layer components{
+
+    .form-group{
+    @apply flex flex-col  justify-center bg-transparent border-b-2 border-fuchsia-400 rounded-lg mb-16 text-2xl
+}
+
+
+
+.btn{
+    @apply block bg-cyan-300 text-slate-500 p-3 mx-auto rounded-full w-3/4 mt-4 text-xl outline-none hover:bg-cyan-200 focus:outline-purple-500 hover:text-slate-800
+}
+
+
+
+}

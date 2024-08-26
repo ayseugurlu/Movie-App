@@ -5,7 +5,7 @@ export const AuthContextt = createContext();
 
 const AuthContext = ({children}) => {
   return (
-    <AuthContextt.Provider>
+    <AuthContextt.Provider value={{}}>
   {children}
     </AuthContextt.Provider>
   )

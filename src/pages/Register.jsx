@@ -1,4 +1,5 @@
 import React from 'react'
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
   return (
@@ -7,50 +8,53 @@ const Register = () => {
         <img src="https://picsum.photos/800/800" className='w-full' alt="" />
       </div>
 
-      <div className='form-container text-black bg-teal-800 w-1/2 items-center justify-center'>
+      <div className='form-container text-black bg-[#030303] w-1/2 items-center justify-center'>
         <form className='p-32'>
-          <h2 className='text-fuchsia-400 text-center text-3xl'>Register</h2>
-          <div className="form-group flex flex-col justify-center bg-orange-700">
+          <h2 className='text-fuchsia-300 text-center text-3xl mb-16'>Sign Up</h2>
+          <div className="form-group ">
             <input type="text"
             autoComplete='true'
-            placeholder=''
+            placeholder='Firstname'
             name='firstname'
             id='firstname'
-            className='peer bg-transparent outline-none text-slate-800 text-[1em] tracking-wide'
+            className='peer'
             required   
              />
-             <label htmlFor="firstname" className=''>Firstname</label>
+             
           </div>
           <div className="form-group">
             <input type="text"
-            placeholder=''
+            placeholder='Lastname'
             name='lastname'
             id='lastname'
             className='peer'
             required   
              />
-             <label htmlFor="lastname" className=''>Lastname</label>
+            
           </div>
           <div className="form-group">
             <input type="email"
-            placeholder=''
+            placeholder='Email'
             name='email'
             id='email'
             className='peer'
             required   
              />
-             <label htmlFor="email" className='text-white'>Email</label>
+            
           </div>
           <div className="form-group">
             <input type="password"
-            placeholder=''
+            placeholder='Password'
             name='password'
             id='password'
             className='peer'
             required   
              />
-             <label htmlFor="password" className='text-white'>Password</label>
+            
           </div>
+
+          <button type='submit' className='btn '>Register</button>
+          <button type='button' className='btn'>Continue with Google  <FcGoogle color='currentColor' className='inline'/></button>
 
         </form>
       </div>
