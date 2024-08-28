@@ -14,16 +14,18 @@ const Movies = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     getMovies(SEARCH_API + query);
+    setQuery("");
   };
 
   return (
     <div className="min-h-screen">
       <h1 className="text-white text-3xl text-center mt-5">Movies</h1>
-      <div className=" w-1/3 min-w-fit  bg-transparent border-b-4 border-fuchsia-400 rounded-lg my-16 mx-auto text-2xl ">
+      <div className=" w-1/4 min-w-fit  bg-transparent border-b-4 border-fuchsia-400 rounded-lg my-16 mx-auto text-2xl">
         <form onSubmit={handleSubmit} className="flex gap-2 items-center">
           <input
             className="w-96 rounded-lg p-3 text-slate-400"
             type="text"
+            value={query}
             placeholder="Search a movie"
             onChange={(e) => setQuery(e.target.value)}
           />
@@ -36,7 +38,7 @@ const Movies = () => {
         </form>
       </div>
 
-      <div className="flex justify-center flex-wrap gap-8 border-3 border-red-300">
+      <div className="flex justify-center  flex-wrap gap-8 ml-20 md:m-0 ">
         {loading ? ( <div
             className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full text-fuchsia-600 mt-52"
             role="status"

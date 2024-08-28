@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContextt } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+
 
 const Register = () => {
 
@@ -11,19 +11,23 @@ const Register = () => {
   const [firstname,setFirstname]=useState()
   const [lastname,setLastname]=useState()
 
-  const navigate=useNavigate()
 
   const handleSubmit=(e)=>{
     e.preventDefault()
 
     const displayName=`${firstname} ${lastname}`
     createUser(email,password,displayName)
+
+    setEmail("")
+    setPassword("")
+    setFirstname("")
+    setLastname("")
     
   }
 
   return (
     <div className="flex flex-wrap justify-center items-center min-h-screen">
-      <div className="image-container sm:w-full md:w-1/2 lg:w-2/3">
+      <div className="image-container h-screen sm:w-full md:w-1/2 lg:w-2/3">
         <img
           src="https://picsum.photos/800/800"
           className="object-cover w-full h-full"
@@ -45,6 +49,7 @@ const Register = () => {
               placeholder="Firstname"
               name="firstname"
               id="firstname"
+              value={firstname}
               className="peer w-full"
               required
               onChange={(e)=>setFirstname(e.target.value)}
@@ -56,6 +61,7 @@ const Register = () => {
               placeholder="Lastname"
               name="lastname"
               id="lastname"
+              value={lastname}
               className="peer w-full"
               required
               onChange={(e)=>setLastname(e.target.value)}
@@ -67,6 +73,7 @@ const Register = () => {
               placeholder="Email"
               name="email"
               id="email"
+              value={email}
               className="peer w-full"
               required
               onChange={(e)=>setEmail(e.target.value)}
@@ -78,6 +85,7 @@ const Register = () => {
               placeholder="Password"
               name="password"
               id="password"
+              value={password}
               className="peer w-full"
               required
               onChange={(e)=>setPassword(e.target.value)}

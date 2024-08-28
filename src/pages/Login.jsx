@@ -13,6 +13,8 @@ const Login = () => {
   const handleSubmit=(e)=>{
       e.preventDefault()
       signIn(email,password)
+      setEmail("")
+      setPassword("")
 
   }
 
@@ -21,7 +23,7 @@ const Login = () => {
     <div className="flex flex-wrap justify-center items-center min-h-screen">
     
 
-    <div className="form-container bg-slate-100 dark:bg-[#030303] sm:w-full md:w-1/2 lg:w-1/3 min-h-screen flex items-center justify-center">
+    <div className="form-container bg-slate-100 dark:bg-[#030303] sm:w-full md:w-1/2 lg:w-1/3 min-h-screen flex items-center justify-center p-10">
       <form className="p-8 md:p-16 lg:p-24 w-full h-full"
       onSubmit={handleSubmit}>
         <h2 className="text-fuchsia-300 text-center text-3xl mb-8 md:mb-12 lg:mb-16">
@@ -36,6 +38,7 @@ const Login = () => {
             id="email"
             className="peer w-full"
             required
+            value={email}
             onChange={(e)=>setEmail(e.target.value)}
           />
         </div>
@@ -46,6 +49,7 @@ const Login = () => {
             name="password"
             id="password"
             className="peer w-full"
+            value={password}
             required
             onChange={(e)=>setPassword(e.target.value)}
           />
@@ -66,7 +70,7 @@ const Login = () => {
       </form>
     </div>
 
-    <div className="image-container sm:w-full md:w-1/2 lg:w-2/3">
+    <div className="image-container overflow-hidden h-screen sm:w-full md:w-1/2 lg:w-2/3">
       <img
         src="https://picsum.photos/800/800"
         className="object-cover w-full h-full"

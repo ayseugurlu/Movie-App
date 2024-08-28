@@ -30,7 +30,7 @@ body{
 @layer base{
     
     input{
-        @apply bg-transparent outline-none text-slate-800 text-[1em] tracking-wide indent-6 mb-2
+        @apply bg-transparent outline-none text-slate-800 dark:text-slate-200 text-[1em] tracking-wide indent-6 mb-2
     }
 
 

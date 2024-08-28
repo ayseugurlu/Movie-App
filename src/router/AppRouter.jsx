@@ -7,6 +7,7 @@ import Movies from '../pages/Movies'
 import Register from '../pages/Register'
 import MovieDetail from '../pages/MovieDetail'
 import Login from '../pages/Login'
+import PrivateRouter from './PrivateRouter'
 
 const AppRouter = () => {
  
@@ -20,7 +21,9 @@ const AppRouter = () => {
         <Route path="/movies" element={<Movies/>} />
         <Route path="/signup" element={<Register/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/details/:id" element={<MovieDetail/>}/>
+        <Route path="/details/:id" element={<PrivateRouter/>}>
+          <Route path="" element={<MovieDetail/>} />
+        </Route>
 
     </Routes>
 

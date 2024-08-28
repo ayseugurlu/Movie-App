@@ -1,10 +1,10 @@
 
 import React, { createContext, useEffect, useState} from "react";
 import { useNavigate } from "react-router-dom";
-import {  createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import {  createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile,GoogleAuthProvider} from "firebase/auth";
 import { auth } from "../auth/firebase";
 import { toastError, toastSuccess } from "../helpers/ToastNotify";
-import { GoogleAuthProvider } from "firebase/auth/web-extension";
+
 
 
 //! context alani actik
@@ -66,7 +66,7 @@ createUserWithEmailAndPassword(auth, email, password).then((user) => {
     signInWithPopup(auth, provider)
       .then((result) => {
         toastSuccess("Google ile giriş başarılı");
-        navigate("/");
+        navigate("/movies");
       })
       .catch((error) => {
         console.log(error);
@@ -74,10 +74,7 @@ createUserWithEmailAndPassword(auth, email, password).then((user) => {
   }
 
   //! user takip
-
-  useEffect(()=>{
-
-    const userObserver=()=>{
+  const userObserver=()=>{
 
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -92,6 +89,10 @@ createUserWithEmailAndPassword(auth, email, password).then((user) => {
       }
     });
   }
+
+
+  useEffect(()=>{
+  userObserver()
   },[])
 
 
@@ -100,6 +101,7 @@ createUserWithEmailAndPassword(auth, email, password).then((user) => {
  const logOut=()=>{
   signOut(auth)
   toastSuccess("Logout is Successfully")
+  navigate("/login")
  }
   
   
