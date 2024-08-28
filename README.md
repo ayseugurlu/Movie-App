@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Movie App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo
+https://movie-app-ruby-pi.vercel.app/
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
+## Project Gif
+![movie-app](https://github.com/user-attachments/assets/your-image-id)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Purpose
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Movie App is a movie application that allows users to browse, search, and view detailed information about movies. The app features user authentication via Firebase, a dark/light mode toggle, and the use of Toastify for notifications. This project was developed to enhance skills in using React, Context API for state management, Tailwind CSS for styling, and React Router for navigation.
 
-### `yarn test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+movie-app/
+├── node_modules/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   ├── auth/
+│   │   └── firebase.jsx
+│   ├── components/
+│   │   ├── Footer.jsx
+│   │   ├── MovieCard.jsx
+│   │   ├── Navbar.jsx
+│   │   └── Switch.jsx
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   └── MovieProvider.jsx
+│   ├── helpers/
+│   │   └── ToastNotify.js
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Main.jsx
+│   │   ├── MovieDetail.jsx
+│   │   ├── Movies.jsx
+│   │   └── Register.jsx
+│   ├── router/
+│   │   ├── AppRouter.jsx
+│   │   └── PrivateRouter.jsx
+│   ├── App.css
+│   ├── App.js
+│   └── index.js
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
+├── tailwind.config.js
+└── yarn.lock
 
-### `yarn build`
+## Project Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **User Authentication**: Implemented using Firebase. Users must log in to access movie details. Unauthorized users are redirected to the login page.
+- **Movie Search and Filtering**: Users can search for movies by name and category. Data is fetched from an API.
+- **Movie Details**: After selecting a movie, users can view detailed information, including cast, release date, and ratings.
+- **Dark/Light Mode**: Users can toggle between dark and light themes.
+- **Toast Notifications**: Instant notifications for actions like login success or error handling.
+- **State Management**: Context API is used to manage global state, including authentication and movie data.
+- **Routing**: React Router is used for navigation between different pages. The `PrivateRouter` component ensures protected routes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **ReactJS**: For building the user interface.
+  - **useState**: For managing local state within components.
+  - **useContext**: For accessing global state provided by the Context API.
+- **Tailwind CSS**: For styling the application with utility-first CSS classes.
+- **Firebase**: For user authentication and data management.
+- **Toastify**: For displaying toast notifications.
+- **Context API**: Used for managing global state across the application.
+- **React Router**: For routing and navigation within the application.
+- **Responsive Design**: The application is fully responsive and optimized for various devices, from mobile phones to desktops.
 
-### `yarn eject`
+## API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application fetches movie data from an external API. Example endpoint:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Movie API Endpoint](https://api.themoviedb.org/3/movie/550?api_key=${API_KEY})
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Outcome
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Through this project, I enhanced my skills in the following areas:
 
-## Learn More
+- Utilizing **Tailwind CSS** for efficient and responsive styling.
+- Implementing **state management** using Context API.
+- Handling **authentication and authorization** in a React application with Firebase.
+- Using **React Router** for seamless navigation and protected routes.
+- Displaying **notifications** using Toastify.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+These skills are essential for developing dynamic and user-friendly React applications.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center"> 📝 Happy Coding! 🎬 </p>

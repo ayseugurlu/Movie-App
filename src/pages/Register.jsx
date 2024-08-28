@@ -35,7 +35,7 @@ const Register = () => {
         />
       </div>
 
-      <div className="form-container bg-[#030303] sm:w-full md:w-1/2 lg:w-1/3 flex items-center justify-center">
+      <div className="form-container bg-slate-200 dark:bg-[#030303] sm:w-full md:w-1/2 lg:w-1/3 flex items-center justify-center">
         <form className="p-8 md:p-16 lg:p-24 w-full"
         onSubmit={handleSubmit}
         >
