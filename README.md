@@ -6,6 +6,7 @@ https://movie-app-ruby-pi.vercel.app/
 
 
 ## Project Gif
+![movie-app](https://github.com/user-attachments/assets/e28f2bdb-2a72-44bb-a1dc-dd848a0da029)
 
 
 ## Project Purpose
