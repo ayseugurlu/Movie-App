@@ -14,7 +14,6 @@ https://movie-app-ruby-pi.vercel.app/
 The Movie App is a movie application that allows users to browse, search, and view detailed information about movies. The app features user authentication via Firebase, a dark/light mode toggle, and the use of Toastify for notifications. This project was developed to enhance skills in using React, Context API for state management, Tailwind CSS for styling, and React Router for navigation.
 
 ## Project Structure
-
 movie-app/
 ├── node_modules/
 ├── public/
@@ -51,6 +50,7 @@ movie-app/
 ├── README.md
 ├── tailwind.config.js
 └── yarn.lock
+
 
 ## Project Features
 
