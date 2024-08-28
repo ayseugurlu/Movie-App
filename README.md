@@ -49,6 +49,31 @@ The Movie App is a movie application that allows users to browse, search, and vi
 └── yarn.lock
 
 
+
+├── public
+│     └── index.html
+├── src
+│    ├── auth
+│    │     └── firebase.js
+│    ├── components
+│    │     ├── MovieCard.js
+│    │     └── Navbar.js
+│    ├── context
+│    │     └── AuthContext.js
+│    ├── pages
+│    │     ├── Login.js
+│    │     ├── Register.js
+│    │     ├── Main.js
+│    │     └── MovieDetail.js
+│    ├── router
+│    │     └── Router.js
+│    ├── App.js
+│    ├── App.css
+│    ├── index.js
+│    └── index.css
+├── package.json
+├── .env
+└── yarn.lock
 ## Project Features
 
 - **User Authentication**: Implemented using Firebase. Users must log in to access movie details. Unauthorized users are redirected to the login page.
