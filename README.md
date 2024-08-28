@@ -14,41 +14,38 @@ https://movie-app-ruby-pi.vercel.app/
 The Movie App is a movie application that allows users to browse, search, and view detailed information about movies. The app features user authentication via Firebase, a dark/light mode toggle, and the use of Toastify for notifications. This project was developed to enhance skills in using React, Context API for state management, Tailwind CSS for styling, and React Router for navigation.
 
 ## Project Structure
-movie-app/
-├── node_modules/
-├── public/
-│   └── index.html
-├── src/
-│   ├── assets/
-│   ├── auth/
-│   │   └── firebase.jsx
-│   ├── components/
-│   │   ├── Footer.jsx
-│   │   ├── MovieCard.jsx
-│   │   ├── Navbar.jsx
-│   │   └── Switch.jsx
-│   ├── context/
-│   │   ├── AuthContext.jsx
-│   │   └── MovieProvider.jsx
-│   ├── helpers/
-│   │   └── ToastNotify.js
-│   ├── pages/
-│   │   ├── Login.jsx
-│   │   ├── Main.jsx
-│   │   ├── MovieDetail.jsx
-│   │   ├── Movies.jsx
-│   │   └── Register.jsx
-│   ├── router/
-│   │   ├── AppRouter.jsx
-│   │   └── PrivateRouter.jsx
-│   ├── App.css
-│   ├── App.js
-│   └── index.js
-├── .env
-├── .gitignore
+010 - Movie App (folder)
+├── public
+│     └── index.html
+├── src
+│    ├── auth
+│    │     └── firebase.js
+│    ├── components
+│    │     ├── MovieCard.js
+│    │     └── Navbar.js
+│    │     └── Footer.js
+│    │     └── Switch.js
+│    ├── context
+│    │     └── AuthContext.js
+│    │     └── MovieProvider.js
+│    ├── helpers
+│    │     └── Toastify.js
+│    │    
+│    ├── pages
+│    │     ├── Login.js
+│    │     ├── Register.js
+│    │     ├── Main.js
+│    │     └── MovieDetail.js
+│    │     └── Movies.js
+│    ├── router
+│    │     └── AppRouter.js
+│    │     └── PrivateRouter.js
+│    ├── App.js
+│    ├── App.css
+│    ├── index.js
+│    └── index.css
 ├── package.json
-├── README.md
-├── tailwind.config.js
+├── .env
 └── yarn.lock
 
 
