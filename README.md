@@ -50,7 +50,7 @@ movie-app/
 ├── README.md
 ├── tailwind.config.js
 └── yarn.lock
-
+´´´´´´´´
 ## Project Features
 
 - **User Authentication**: Implemented using Firebase. Users must log in to access movie details. Unauthorized users are redirected to the login page.

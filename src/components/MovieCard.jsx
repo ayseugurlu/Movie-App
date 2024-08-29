@@ -15,7 +15,7 @@ const navigate = useNavigate();
     
     <img
       className="w-full"
-      src={`https://image.tmdb.org/t/p/w1280${poster_path}` || "https://cdn.pixabay.com/photo/2012/04/18/23/29/film-38241_1280.png"}
+      src={poster_path ? `https://image.tmdb.org/t/p/w1280${poster_path}` : "https://images.unsplash.com/photo-1527212986666-4d2d47a80d5f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
       alt=""
     />
     
