@@ -6,6 +6,7 @@ https://movie-app-ruby-pi.vercel.app/
 
 
 ## Project Gif
+![movie-app](https://github.com/user-attachments/assets/e28f2bdb-2a72-44bb-a1dc-dd848a0da029)
 
 
 ## Project Purpose
@@ -51,6 +52,9 @@ movie-app/
 ├── tailwind.config.js
 └── yarn.lock
 ´´´´´´´´
+![image](https://github.com/user-attachments/assets/9c313efe-2e5e-4255-bbf0-23dc06adfb60)
+
+
 ## Project Features
 
 - **User Authentication**: Implemented using Firebase. Users must log in to access movie details. Unauthorized users are redirected to the login page.
