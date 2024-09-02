@@ -61,7 +61,7 @@ const Login = () => {
         </div>
 
         <button type="submit" className="btn w-full p-2 mb-4 bg-fuchsia-400 text-white rounded">
-          Register
+          LOGIN
         </button>
         <button onClick={()=>signUpWithGoogle()} type="button" className="btn w-full p-2 bg-fuchsia-400 text-white border border-gray-300 rounded flex items-center justify-center">
           Continue with Google{" "}
