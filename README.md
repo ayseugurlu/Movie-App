@@ -15,43 +15,7 @@ The Movie App is a movie application that allows users to browse, search, and vi
 
 ## Project Structure
 
-movie-app/
-├── node_modules/
-├── public/
-│   └── index.html
-├── src/
-│   ├── assets/
-│   ├── auth/
-│   │   └── firebase.jsx
-│   ├── components/
-│   │   ├── Footer.jsx
-│   │   ├── MovieCard.jsx
-│   │   ├── Navbar.jsx
-│   │   └── Switch.jsx
-│   ├── context/
-│   │   ├── AuthContext.jsx
-│   │   └── MovieProvider.jsx
-│   ├── helpers/
-│   │   └── ToastNotify.js
-│   ├── pages/
-│   │   ├── Login.jsx
-│   │   ├── Main.jsx
-│   │   ├── MovieDetail.jsx
-│   │   ├── Movies.jsx
-│   │   └── Register.jsx
-│   ├── router/
-│   │   ├── AppRouter.jsx
-│   │   └── PrivateRouter.jsx
-│   ├── App.css
-│   ├── App.js
-│   └── index.js
-├── .env
-├── .gitignore
-├── package.json
-├── README.md
-├── tailwind.config.js
-└── yarn.lock
-´´´´´´´´
+
 ![image](https://github.com/user-attachments/assets/9c313efe-2e5e-4255-bbf0-23dc06adfb60)
 
 
